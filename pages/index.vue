@@ -1,89 +1,100 @@
+
 <template>
-  <v-row justify="center" align="center">
-    <v-col cols="12" sm="8" md="6">
-      <div class="text-center">
-        <logo />
-        <vuetify-logo />
-      </div>
-      <v-card>
-        <v-card-title class="headline">
-          Welcome to the Vuetify + Nuxt.js template
-        </v-card-title>
-        <v-card-text>
-          <p>Vuetify is a progressive Material Design component framework for Vue.js. It was designed to empower developers to create amazing applications.</p>
-          <p>
-            For more information on Vuetify, check out the <a
-              href="https://vuetifyjs.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              documentation
-            </a>.
-          </p>
-          <p>
-            If you have questions, please join the official <a
-              href="https://chat.vuetifyjs.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="chat"
-            >
-              discord
-            </a>.
-          </p>
-          <p>
-            Find a bug? Report it on the github <a
-              href="https://github.com/vuetifyjs/vuetify/issues"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="contribute"
-            >
-              issue board
-            </a>.
-          </p>
-          <p>Thank you for developing with Vuetify and I look forward to bringing more exciting features in the future.</p>
-          <div class="text-xs-right">
-            <em><small>&mdash; John Leider</small></em>
+  <div class="home-page">
+    <div id="header">
+      <h1> - Blogg innlegg - </h1>
+
+    </div>
+
+    <div class="articles">
+      <div class="article" v-for="article of articles"
+           :key="article">
+        <nuxt-link :to="{ name: 'slug', params: { slug: article.slug } }">
+          <div class="article-inner">
+            <img :src="require(`~/assets/resources/${article.img}`)" alt="">
+              <div class="detail">
+                <h3>{{ article.title }}</h3>
+                <p>{{ article.description }}</p>
+              </div>
           </div>
-          <hr class="my-3">
-          <a
-            href="https://nuxtjs.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Nuxt Documentation
-          </a>
-          <br>
-          <a
-            href="https://github.com/nuxt/nuxt.js"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Nuxt GitHub
-          </a>
-        </v-card-text>
-        <v-card-actions>
-          <v-spacer />
-          <v-btn
-            color="primary"
-            nuxt
-            to="/inspire"
-          >
-            Continue
-          </v-btn>
-        </v-card-actions>
-      </v-card>
-    </v-col>
-  </v-row>
+        </nuxt-link>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
-import VuetifyLogo from '~/components/VuetifyLogo.vue'
 
-export default {
-  components: {
-    Logo,
-    VuetifyLogo
+
+  export default {
+    async asyncData({ $content, params}) {
+      const articles = await $content('blog', params.slug)
+        .only(['title', 'description', 'img', 'slug'])
+        .sortBy('createdAt', 'asc')
+        .fetch();
+
+      return {
+        articles
+      }
+    }
   }
-}
 </script>
+
+<style>
+
+
+  .home-page {
+    padding: 50px 30px;
+  }
+  h2 {
+    margin-bottom: 30px;
+    text-align: center;
+    color: black;
+    text-decoration: underline;
+  }
+  .articles {
+    margin: 0 auto;
+    max-width: 800px;
+  }
+  .article {
+    margin-bottom: 70px;
+    max-height: 150px;
+  }
+  .article-inner {
+    padding: 15px;
+    background: #FFF;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    display: flex;
+  }
+  .article-inner img {
+    display: block;
+    width: 100%;
+    max-width: 150px;
+  }
+  .article-inner .detail {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  h3 {
+    color: #212121;
+    font-size: 24px;
+    text-decoration: none;
+  }
+  p {
+    color: #888;
+    font-size: 18px;
+    text-decoration: none;
+  }
+
+  #header {
+    text-align: center;
+
+  }
+
+  #header h1 {
+    font-size: 50px;
+    font-weight: lighter;
+  }
+
+</style>
