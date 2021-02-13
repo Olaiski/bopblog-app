@@ -1,66 +1,95 @@
 ---
-title: My Second blog post
+title: Markdown Template (second-post)
 description: Welcome to my second blog post using the content module
 slug: second-post
 img: test.png
 ---
 
+# Basics of Markdown
+Markdown is the most popular markup language that can be used to format documents. It can be used to create *websites*,*ebooks*,*email*,*chats in discussions forums*.
+
+## Topics
+1. Paragraphs 
+
+    MD expects a full line space to show texts in a different line else it joins text in the same line.
+2.  Text decorations
+
+    MD can write **bold** texts, ~~italiic~~ *italic*  texts
+3. Headings
+    No of #'s represent the type of heading. Github will automatically add id's to headings, so the text will be automatically linked. 
+    ## This is h2
+    ### This is h3
+4. Links
+
+   [My Github](https://github.com/Olaiski?tab=repositories "all repos") account. [Olaiski][1] github repo.
+
+5. Images
+    Images can be used just like links. ![Alt txt](img url)
+
+    !["cat Img"](http://placekitten.com/200/200)
+
+    Thumbnails images can also be used which links to larger image 
+    [<img src="http://placekitten.com/20/20">](http://placekitten.com/200/200)
+
+6. Ordered and Unordered Lists
+
+    Coding Best Practices:
+
+    * Keep code DRY
+    * Writing Unit Test cases
+    * Checking cross-browser support
+
+    Steps to merge branch:
+
+    1. Create a branch from feature
+    1. commit your changes
+    1. push your changes
+    1. raise a pull request
+
+7. Code Blocks
+
+    This is super helpful when posting any code snippet
 
 
-# Mastering VueJS
-### My learning notes on Vue (version 3)
+    ```js
+    const fn = () => alert("some fn");
+    ```
 
-## Installation Types
 
-- CDN
-- NPM
-- CLI (_Preferred_)
-- Vite
 
-### CLI Installation
-The `cli` installation is easy but requires prior knowledge of `NodeJS`.
 
-Installing the CLI is as easy as running the following command in your terminal (requires node/npm to be installed).
+    ```css
+    .hide {
+        display:none
+    }
+    ```
 
-``` sh
-yarn global add @vue/cli
-# OR
-npm install -g @vue/cli
-```
 
----
+    Also can show code difference
 
-## Introduction
 
-Vue is a progressive framework for building user interfaces. Unlike other monolithic frameworks, Vue is designed from the ground up to be incrementally adoptable.
+    ```diff
+    var x = 10;
+    - const counter = 0;
+    + let counter = 0
+    ```
 
-Personally, Vue is the _easiest_ frontend framework / library to learn.
 
-Vue uses __declarative rendering__, this means that it can render data to the DOM using _standard_ HTML template syntax such as;
 
-```html
-<div id="block">
-  <h1>Hello, World!</h1>
-</div>
-```
+8. Tables 
 
-Using Vue you can create links between the data and the DOM for example if we have a `prop` or a variable in our `<script></script>` tag and this is updated the DOM will react and update to match the new data.
+    Tables can be generated with headings and text alignment option
 
----
+    |Stocks|Price|
+    |:-----:|------:|
+    |TCS|230|
+    |YES Bank|500|
 
-## Directives
 
-Vue uses html `attributes` known as __directives__ `e.g. 'v-on'`. Directives can attach event listeners that invoke methods in our instances. See example below;
 
-```html
-<div id="event-handler">
-  <h2>Welcome</h2>
-  <button v-on:click="doSomething">Click me</div>
-</div>
-```
+Cool Tips 
 
-The above snippet tells Vue to run the method `doSomething` when the button is clicked. The method is declared in the `<script></script>` tags under `methods` or more recently using the Vue composition API's `setup` method.
-
-There is more directives than `v-on`, for example you can also use `v-model` to bind data to an DOM element or use `v-if` to conditionally render an element. There is a lot more too what you can find scattered around the [Vue Website](https://v3.vuejs.org/guide/).
-
-On top of the existing directives you can also create your own custom directives. [Find out more here](https://v3.vuejs.org/guide/custom-directive.html#intro).
+ * [Grammarly](https://marketplace.visualstudio.com/items?itemName=znck.grammarly) extension can eliminate typo and grammar mistakes
+ * [ScreenTOGif](https://www.screentogif.com/) to record videos in GIF format
+ * Upload GIF's to [giphy](https://giphy.com/) to embed them into blog posts.
+ * [Stackedit](https://stackedit.io/) for Markdown Editing in Browser.

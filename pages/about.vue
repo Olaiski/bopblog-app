@@ -1,14 +1,23 @@
 <template>
     <div class="about-page">
       <div id="header">
-        <h1> - Om oss - </h1>
+        <h1> - Om oss / Prosjektet- </h1>
 
       </div>
 
       <div class="about-text">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam cumque debitis dolorum expedita illum, iure suscipit? Aliquid commodi eius illum inventore iure libero minima officia quaerat quam, quos soluta vel.</p>
+        <p>Heisann!</p>
+        <p>Vi er Anders og Tommy, vi jobber med en bachelor i IT & Informasjonssystemer ved USN Bø.</p>
+        <p>Vi skal utvikle et 2D-plattform spill, valgte spill pga. interesse og utfordring....  Har utviklet en del CRUD applikasjoner i tidligere semestere,
+          valgte å prøve noe helt nytt </p>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem beatae consequatur dolores doloribus ea facilis, fuga, ipsum iusto minus modi nam ratione recusandae repudiandae rerum sed tempore voluptate. Odit, voluptates.</p>
+        <p>Spillet skal ha kampsystem i ekte-tid.
+          Spillet skal inneholde fiender, interaktive og fiendtlige miljøobjekter og et inventarsystem.
+          Level designet baserer seg på Metroidvania prinsipper.
+        </p>
+
+        <p>Oppdaterer bloggen forløpende, vises fra første til siste innlegg.. Legger til GIFs etc</p>
+
       </div>
 
 
