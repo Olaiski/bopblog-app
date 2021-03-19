@@ -64,7 +64,17 @@
               {
                 name: 'Prosjektkonsept',
                 link: "https://drive.google.com/file/d/13S0oqC3fZgfFbANlmvjAXBbzuWWzN-t0/view?usp=sharing",
-              }
+              },
+
+              {
+                name: 'Presentasjon 1 (Milepæle 1)',
+                link: "https://mega.nz/file/rtoAQb6K#4VPQAnTJOz8z85HevfIAIacWBJSaMonLF6kQ9-HXhxI",
+              },
+
+              {
+                name: 'Presentasjon 2 (Milepæle 2)',
+                link: "https://mega.nz/file/mlh1HC6Q#z4mLN0gGTZ_LEPIaSBYY62MmOmct28FBL9F8O4eUkCU",
+              },
 
             ],
           }
