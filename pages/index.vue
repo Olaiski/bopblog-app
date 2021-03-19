@@ -66,6 +66,8 @@
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     display: flex;
+    min-height: 170px;
+    max-height: 170px;
   }
   .article-inner img {
     display: block;

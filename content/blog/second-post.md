@@ -65,4 +65,4 @@ Vi blir å finne flere sprites etc. forløpende basert på de forskjellige AI at
 
 
 ### Veien videre
-Neste sprint tar for seg fiende AI / patruljering, animasjoner og et "Tutorial område"
+Neste sprint tar for seg fiende AI / patruljering, animasjoner og et "Tutorial område".
