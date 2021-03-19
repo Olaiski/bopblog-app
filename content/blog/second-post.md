@@ -1,95 +1,68 @@
 ---
-title: Markdown Template (second-post)
-description: Welcome to my second blog post using the content module
+title: Research and Discovery + Sprint 1 
+description: Sprint 1 er ferdig! Litt info om hvordan det har gått.
 slug: second-post
-img: test.png
+img: roguetest.png
 ---
 
-# Basics of Markdown
-Markdown is the most popular markup language that can be used to format documents. It can be used to create *websites*,*ebooks*,*email*,*chats in discussions forums*.
+# Research and Discovery<br/>
+Vi har nå gjennomført en god del relevante moduler i Unity Learn (https://learn.unity.com/), 
+de var for det meste i 3D men var fortsatt relevant for 2D utvikling. 
+Disse modulene ga oss et greit innblikk i selve spillmotoren og en grunnleggende forståelse 
+for hvordan man strukturer et prosjekt i Unity.
+<br><br/>
 
-## Topics
-1. Paragraphs 
+# Sprint 1 (10.02.2021 - 20.02.2021)
+Den første spriten tok for seg å finne passende figurer, tilesets og sprites. Disse ble hentet/kjøpt
+fra [Unity Assets store](https://assetstore.unity.com/) og  [Itch.io](https://itch.io/).
+I følge vårt Gantt Chart skulle vi også implementere lyd denne sprinten, men vi har utsatt dette for å lage mer rom
+til å fin pusse på kamp- og helsesystemet. Vi vil prioritere spill-logikk og struktur fremfor lyd, men skal
+implementere dette i en senere sprint.
+<br><br/>
 
-    MD expects a full line space to show texts in a different line else it joins text in the same line.
-2.  Text decorations
+### Spillerkarakteren
+Spillerkarakteren vi valgte kom med animasjoner (eller flere bilder vi måtte sette sammen til en animasjon).
+Den hadde også angrep for nærkamp, samt et "ranged" angrep. Bildet under viser figuren.
+<br><br/>
+<img src="https://i.imgur.com/IJmKl1p.png" width="200px" height="200px" />
+<br><br/>
 
-    MD can write **bold** texts, ~~italiic~~ *italic*  texts
-3. Headings
-    No of #'s represent the type of heading. Github will automatically add id's to headings, so the text will be automatically linked. 
-    ## This is h2
-    ### This is h3
-4. Links
+Vi har også startet med å implementere et helsesystem, og et angrepsområde for spilleren.
+Når man angriper sjekker den hva som er innenfor dette
+området. Er det en fiende gjør man da skade til den.
 
-   [My Github](https://github.com/Olaiski?tab=repositories "all repos") account. [Olaiski][1] github repo.
-
-5. Images
-    Images can be used just like links. ![Alt txt](img url)
-
-    !["cat Img"](http://placekitten.com/200/200)
-
-    Thumbnails images can also be used which links to larger image 
-    [<img src="http://placekitten.com/20/20">](http://placekitten.com/200/200)
-
-6. Ordered and Unordered Lists
-
-    Coding Best Practices:
-
-    * Keep code DRY
-    * Writing Unit Test cases
-    * Checking cross-browser support
-
-    Steps to merge branch:
-
-    1. Create a branch from feature
-    1. commit your changes
-    1. push your changes
-    1. raise a pull request
-
-7. Code Blocks
-
-    This is super helpful when posting any code snippet
+<img src="https://i.imgur.com/VPM2f2g.png" width="400px" height="200px" />
+<img src="https://i.imgur.com/6arxMQt.png" width="200px" height="200px" />
+<br><br/>
 
 
-    ```js
-    const fn = () => alert("some fn");
-    ```
+### Tilesets
+Spillet vårt er 2D-tilemap-basert, dvs. et spill der nivåene består av mange små "ruter" som samlet 
+danner et rutenett av tiles. Noen ganger kan skillet mellom hver tile være åpenbart, men det kan også være sømløst og
+ugjenkjennelig for spillerne.
+
+Vi har valgt en god del forskjellige miljøer for spillverdenen vår. Vi skal ikke nødvendigvis bruke alt, men
+man finner ofte små detaljer i de fleste man kan bruke (f.eks. en type plattform eller bakgrunn).
+
+<br><br/>
+<img src="https://i.imgur.com/yKwFXrE.png" width="500" height="200px" />
+<br><br/>
+
+Disse må "klippes" opp for å brukes gridsystemet, og plattformene må tilpasses til hvor spilleren/objekter kan stå. 
+Bildene under viser noen plattformer er "klippet" ut og tilpasset en fysisk form (venstre), 
+og det andre bildet (høyre) viser bruken av disse i gridsystemet. 
+<br><br/>
+<img src="https://i.imgur.com/CP9Drpy.png" width="300" height="200px" />
+<img src="https://i.imgur.com/wjbDXWJ.png" width="300" height="200px" />
+<br><br/>
+
+### Fiender
+Akkurat nå har vi bare valgt ut 2 typer fiender, én for nærkamp og én som skyter projektiler. 
+Vi blir å finne flere sprites etc. forløpende basert på de forskjellige AI atferdene.
+<br><br/>
+<img src="https://i.imgur.com/RPj0M81.png" width="300" height="200px" />
+<br><br/>
 
 
-
-
-    ```css
-    .hide {
-        display:none
-    }
-    ```
-
-
-    Also can show code difference
-
-
-    ```diff
-    var x = 10;
-    - const counter = 0;
-    + let counter = 0
-    ```
-
-
-
-8. Tables 
-
-    Tables can be generated with headings and text alignment option
-
-    |Stocks|Price|
-    |:-----:|------:|
-    |TCS|230|
-    |YES Bank|500|
-
-
-
-Cool Tips 
-
- * [Grammarly](https://marketplace.visualstudio.com/items?itemName=znck.grammarly) extension can eliminate typo and grammar mistakes
- * [ScreenTOGif](https://www.screentogif.com/) to record videos in GIF format
- * Upload GIF's to [giphy](https://giphy.com/) to embed them into blog posts.
- * [Stackedit](https://stackedit.io/) for Markdown Editing in Browser.
+### Veien videre
+Neste sprint tar for seg fiende AI / patruljering, animasjoner og et "Tutorial område"
