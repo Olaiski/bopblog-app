@@ -8,16 +8,9 @@
       <div class="about-text">
         <p>Heisann!</p>
         <p>Vi er Anders og Tommy, vi jobber med en bachelor i IT & Informasjonssystemer ved USN Bø.</p>
-        <p>Vi skal utvikle et 2D-plattform spill, valgte spill pga. interesse og utfordring....  Har utviklet en del CRUD applikasjoner i tidligere semestere,
-          valgte å prøve noe helt nytt </p>
-
-        <p>Spillet skal ha kampsystem i ekte-tid.
-          Spillet skal inneholde fiender, interaktive og fiendtlige miljøobjekter og et inventarsystem.
-          Level designet baserer seg på Metroidvania prinsipper.
-        </p>
-
-        <p>Oppdaterer bloggen forløpende, vises fra første til siste innlegg.. Legger til GIFs etc</p>
-
+        <p>Vi utvikler et 2D-plattformspill med inspirasjon fra Metroidvania sjangeren.</p>
+        <p>Etter flere år med fokus på utvikling av webapplikasjoner på skolen ønsket vi å utfordre oss selv med å lære noe helt nytt innenfor et annet utviklingsområde.
+          Vi falt for spillutvikling fordi vi begge har hatt spill som hobby hele livet og ønsket få bygget opp kompetanse i hvordan de bygges.</p>
       </div>
 
 

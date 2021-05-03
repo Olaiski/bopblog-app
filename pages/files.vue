@@ -33,7 +33,7 @@
             :key="item.name"
           >
             <td>{{ item.name }}</td>
-            <td> <a :href="item.link" target="_blank">Docs link</a></td>
+            <td> <a :href="item.link" target="_blank">Link</a></td>
           </tr>
           </tbody>
         </template>
@@ -74,6 +74,11 @@
               {
                 name: 'Presentasjon 2 (Milepæle 2)',
                 link: "https://mega.nz/file/mlh1HC6Q#z4mLN0gGTZ_LEPIaSBYY62MmOmct28FBL9F8O4eUkCU",
+              },
+
+              {
+                name: 'Milepæl 3',
+                link: "https://mega.nz/file/G0hzyQBQ#rbhOtHzR5JHyoG_qacQz3KabWBMDQz7FYbJs34CBTPI",
               },
 
             ],
