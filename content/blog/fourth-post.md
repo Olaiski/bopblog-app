@@ -29,11 +29,11 @@ Under kan du se koden som sjekker om spilleren treffer KillFloor.
  ```
 <br></br>
 En annen løsning er å lage "Prefabs" (Egendefinert Spillobjekt) basert på piggene, disse kan da "males" på
-nivået (ved hjelp av 2D-extras pakken), på samme måte som plattformene. Men vi valgte en litt enklerer måte å håndtere dette, pga. tid.
+nivået (ved hjelp av 2D-extras pakken), på samme måte som plattformene. Men vi valgte en litt enklere måte å håndtere dette, pga. tid.
 
 <br><br/>
 ### Heiser
-Heiser er også mye brukt i 2D-spill, de går som oftesest på de vertikale eller horisontale aksene. Den heisen vi har implementere går på den
+Heiser er også mye brukt i 2D-spill, de går som oftest på de vertikale eller horisontale aksene. Den heisen vi har implementere går på den
 vertikale.
 <br><br/>
 <img src="https://i.imgur.com/Qa98tif.gif" width="300" height="200" />

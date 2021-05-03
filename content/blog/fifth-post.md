@@ -28,9 +28,9 @@ denne trenger spilleren for å komme videre i spillet.
 Denne fienden finnes det bare én av, den er ment å være vanskeligere enn de andre fiendene. For at spilleren skal komme seg 
 videre i spillet må hen drepe denne “Mini-bossen”, dette er fordi den legger ifra seg en nøkkel som spilleren trenger for å åpne en lukket dør.
 <br></br>
-Her fikk vi tatt i bruk GameManager skriptet (Dette skriptet holder styr på permanente endringer i et nivå, som f.eks. at denne «bossen» ikke skal kan drepes 2 ganger. )
+Her fikk vi tatt i bruk GameManager skriptet (Dette skriptet holder styr på permanente endringer i et nivå, som f.eks. at denne «bossen» ikke skal kunne drepes 2 ganger.)
 
-Denne fungerer veldig likt de andre fiendetypene, med noen unntak. Den her litt mer helse, man blir tvunget til å slåste med den (sperrer utveien) og 
+Denne fungerer veldig likt de andre fiendetypene, med noen unntak. Den har litt mer helse, man blir tvunget til å slåss med den (sperrer utveien) og 
 den har spesialangrep.
 
 GIF'en under viser spesialangrepet og nøkkelen som dropper.
