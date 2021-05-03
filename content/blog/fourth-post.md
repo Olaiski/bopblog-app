@@ -8,6 +8,7 @@ createdAt: 4
 # Sprint 3  (09.03.2021 - 30.03.2021)
 Denne sprinten tok for seg implementering av feller, heiser og nivådesign. Vi ligger litt etter i nivådesign delen av spillet, 
 dette grunnet sykdom. Vi tror vi skal klare å hente det inn igjen.
+De fleste miljøobjekter har ikke "Sprites", dette er noe vi må se på senere. 
 <br><br/>
 
 ### Feller
