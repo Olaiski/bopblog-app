@@ -3,6 +3,7 @@ title: Prosjektstart
 description: En liten intro til prosjektet.
 slug: first-post
 img: unity-tab-square-black.png
+createdAt: 1
 ---
 
 # Da var prosjeketet i gang!
@@ -17,6 +18,6 @@ vi ville prøve noe helt nytt.
 
 Siden vi ikke har noe erfaring med spillutvikling blir det en god del nye elementer å sette seg inn i, en av utfordringene blir å lære selve spillmotoren Unity. Denne tar for seg alt fra spill-logikk (C# scripts) til animasjoner og lyd.
 
-Vi blir å legge ut blogginlegg fortløpende ettersom sprintene er gjennomført.
+Vi blir å legge ut blogginlegg fortløpende ettersom sprintene er gjennomført. 
 
 

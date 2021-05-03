@@ -3,6 +3,7 @@ title: Sprint 3
 description: Sprint 3 - Feller, heiser og nivådesign!
 slug: fourth-post
 img: KillFloor2.png
+createdAt: 4
 ---
 # Sprint 3  (09.03.2021 - 30.03.2021)
 Denne sprinten tok for seg implementering av feller, heiser og nivådesign. Vi ligger litt etter i nivådesign delen av spillet, 

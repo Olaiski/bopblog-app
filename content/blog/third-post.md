@@ -3,6 +3,7 @@ title: Sprint 2
 description: Sprint 2 er over, vi har impl. AI og Tutorial level!
 slug: third-post
 img: ai2.png
+createdAt: 3
 ---
 # Sprint 2  (20.02.2021 - 09.03.2021)
 Denne sprinten tok for seg implementering av fiender / AI og ferdigstilling av et "Tutorial-område". Vi

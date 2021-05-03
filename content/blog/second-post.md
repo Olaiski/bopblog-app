@@ -3,6 +3,7 @@ title: Research and Discovery + Sprint 1
 description: Sprint 1 er ferdig! Litt info om hvordan det har gått.
 slug: second-post
 img: roguetest.png
+createdAt: 2
 ---
 
 # Research and Discovery<br/>
@@ -65,4 +66,4 @@ Vi blir å finne flere sprites etc. forløpende basert på de forskjellige AI at
 
 
 ### Veien videre
-Neste sprint tar for seg fiende AI / patruljering, animasjoner og et "Tutorial område".
+Neste sprint tar for seg fiende AI / patruljering, animasjoner og et "Tutorial område". 
