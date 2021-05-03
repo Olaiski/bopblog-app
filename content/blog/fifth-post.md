@@ -1,6 +1,6 @@
 ---
 title: Sprint 4
-description: Sprint 4 - Abomination (Mini-boss), Nye Fiender og Pickups 
+description: Sprint 4 - Abomination (Mini-boss), Nye Fiender og Pickups!
 slug: fifth-post
 img: Abomination.png
 createdAt: 5
