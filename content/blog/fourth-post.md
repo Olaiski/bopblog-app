@@ -12,11 +12,11 @@ dette grunnet sykdom. Vi tror vi skal klare å hente det inn igjen.
 ### Feller
 Feller er en mye brukt "miljøfiende" i metroidvania sjangeren, dette kan håndteres på mange måter. Vår implementasjon er relativt enkel og gjenbrukbar.
 Vi sjekker om spilleren er innenfor et forhåndssatt område, hvis spilleren er det, trigger vi et event som dreper
-hen momentant. Koden under viser sjekken vi gjør i KillFloor objektet.
+hen momentant.
 <br><br/>
 <img src="https://i.imgur.com/g5ycQPT.gif" width="500" height="200" />
 <br><br/>
-Under kan du se koden som sjekker om spilleren treffer bakken.
+Under kan du se koden som sjekker om spilleren treffer KillFloor.
  ``` csharp
     // KillFloor sjekk
     private void OnCollisionEnter2D(Collision2D col)
@@ -27,7 +27,7 @@ Under kan du se koden som sjekker om spilleren treffer bakken.
  ```
 <br></br>
 En annen løsning er å lage "Prefabs" (Egendefinert Spillobjekt) basert på piggene, disse kan da "males" på
-nivået (2D-extras), på samme måte som plattformene. Men vi valgte en litt enklerer måte å håndtere dette, pga. tid.
+nivået (ved hjelp av 2D-extras pakken), på samme måte som plattformene. Men vi valgte en litt enklerer måte å håndtere dette, pga. tid.
 
 <br><br/>
 ### Heiser
@@ -61,7 +61,7 @@ spilleren falt etter heisen når den var på tur ned.
 <br><br/>
 
 Vi fant ut at man kan sette spilleren som et barn av heis-objektet, da arver
-spilleren hastigheten. 
+spilleren hastigheten. Og problemet var løst!
  ``` csharp
   private void OnCollisionEnter2D(Collision2D collision)
      {
