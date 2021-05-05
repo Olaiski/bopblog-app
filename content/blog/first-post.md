@@ -6,7 +6,7 @@ img: unity-tab-square-black.png
 createdAt: 1
 ---
 
-# Da var prosjeketet i gang!
+# Da var prosjektet i gang!
 
 Hei!<br>
 Vi er Anders og Tommy og dette er bloggen til vårt bachelor prosjekt, vi

@@ -19,6 +19,15 @@
           Filer
         </v-btn>
       </nuxt-link>
+
+
+      <nuxt-link to="/game">
+        <v-btn class="nav-btn">
+          Spillet
+        </v-btn>
+      </nuxt-link>
+
+
     </nav>
   </header>
 </template>

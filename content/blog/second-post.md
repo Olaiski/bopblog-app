@@ -59,7 +59,7 @@ og det andre bildet (høyre) viser bruken av disse i gridsystemet.
 
 ### Fiender
 Akkurat nå har vi bare valgt ut 2 typer fiender, én for nærkamp og én som skyter projektiler. 
-Vi blir å finne flere sprites etc. forløpende basert på de forskjellige AI atferdene.
+Vi blir å finne flere sprites etc. fortløpende basert på de forskjellige AI atferdene.
 <br><br/>
 <img src="https://i.imgur.com/RPj0M81.png" width="300" height="200px" />
 <br><br/>
